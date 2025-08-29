@@ -1,6 +1,6 @@
 <!-- Banner con nickname -->
 <p align="center">
-  <img src="https://readme-typing-svg.herokuapp.com?font=Orbitron&size=35&duration=3000&pause=800&color=FF3131&center=true&vCenter=true&width=600&height=70&lines=🔥+S4t4nHack;Data+Scientist+%26+Cybersecurity;Always+Learning+Always+Hacking+🔐" alt="Typing SVG" />
+  <img src="https://readme-typing-svg.herokuapp.com?font=Orbitron&size=35&duration=3000&pause=800&color=FF3131&center=true&vCenter=true&width=600&height=70&lines=🔥+S4t4nHack;Data+Scientist+%26+Cybersecurity; Always+Learning+Always+Hacking+🔐" alt="Typing SVG" />
 </p>
 
 ---

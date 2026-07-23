@@ -1,6 +1,6 @@
 <div align="center">
 
-<img src="https://capsule-render.vercel.app/api?type=waving&color=gradient&customColorList=2,5,12,18&height=200&section=header&text=SYSTEM%20ONLINE&fontSize=48&fontColor=00F0FF&animation=fadeIn&fontAlignY=35&desc=Mario%20Martinez%20-%20Cybersecurity%20%26%20Data&descAlignY=55&descColor=FF00E5" width="100%"/>
+<img src="https://capsule-render.vercel.app/api?type=waving&color=gradient&customColorList=2,5,12,18&height=200&section=header&text=SYSTEM%20ONLINE&fontSize=48&fontColor=00F0FF&animation=fadeIn&fontAlignY=35&desc=Mario%20Martinez%20-%20Cybersecurity%20%C3%97%20Data&descAlignY=55&descColor=FF00E5" width="100%"/>
 
 <img src="https://readme-typing-svg.demolab.com?font=Fira+Code&weight=600&size=24&duration=3000&pause=900&color=00F0FF&background=00000000&center=true&vCenter=true&width=680&lines=%E2%9A%A1+booting+mario_martinez.exe...;whoami+%3E+Cybersecurity+%2B+Data+Scientist;deploying+production+infra+on+AWS+%F0%9F%94%90;always+learning...+always+hacking+%F0%9F%92%80" alt="Typing SVG" />
 

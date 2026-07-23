@@ -6,7 +6,6 @@
 
 <p>
   <img src="https://komarev.com/ghpvc/?username=Diablo999-hub&label=PROFILE+VIEWS&color=9D00FF&style=for-the-badge" alt="Profile views"/>
-  <img src="https://img.shields.io/github/followers/Diablo999-hub?label=FOLLOWERS&style=for-the-badge&color=00F0FF&labelColor=000000" alt="Followers"/>
   <img src="https://img.shields.io/badge/STATUS-OPEN%20TO%20WORK-FF00E5?style=for-the-badge&labelColor=000000" alt="Open to work"/>
 </p>
 

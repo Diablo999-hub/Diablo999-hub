@@ -1,0 +1,26 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 520 400" width="520" height="400" role="img" aria-label="Skill radar chart">
+<style>text{font-family:ui-monospace,SFMono-Regular,Menlo,Consolas,"DejaVu Sans Mono",monospace}</style>
+<polygon points="260.0,173.5 288.1,189.8 288.1,222.2 260.0,238.5 231.9,222.2 231.9,189.8" fill="none" stroke="#d5dce8" stroke-width="1"/>
+<polygon points="260.0,141.0 316.3,173.5 316.3,238.5 260.0,271.0 203.7,238.5 203.7,173.5" fill="none" stroke="#d5dce8" stroke-width="1"/>
+<polygon points="260.0,108.5 344.4,157.2 344.4,254.8 260.0,303.5 175.6,254.8 175.6,157.2" fill="none" stroke="#d5dce8" stroke-width="1"/>
+<polygon points="260.0,76.0 372.6,141.0 372.6,271.0 260.0,336.0 147.4,271.0 147.4,141.0" fill="none" stroke="#d5dce8" stroke-width="1"/>
+<line x1="260.0" y1="206.0" x2="260.0" y2="76.0" stroke="#d5dce8" stroke-width="1"/>
+<line x1="260.0" y1="206.0" x2="372.6" y2="141.0" stroke="#d5dce8" stroke-width="1"/>
+<line x1="260.0" y1="206.0" x2="372.6" y2="271.0" stroke="#d5dce8" stroke-width="1"/>
+<line x1="260.0" y1="206.0" x2="260.0" y2="336.0" stroke="#d5dce8" stroke-width="1"/>
+<line x1="260.0" y1="206.0" x2="147.4" y2="271.0" stroke="#d5dce8" stroke-width="1"/>
+<line x1="260.0" y1="206.0" x2="147.4" y2="141.0" stroke="#d5dce8" stroke-width="1"/>
+<polygon points="260.0,121.5 327.5,167.0 344.4,254.8 260.0,284.0 192.5,245.0 186.8,163.8" fill="#0a7f8c" fill-opacity="0.16" stroke="#0a7f8c" stroke-width="2" stroke-linejoin="round"/>
+<circle cx="260.0" cy="121.5" r="3.5" fill="#b4157f"/>
+<circle cx="327.5" cy="167.0" r="3.5" fill="#b4157f"/>
+<circle cx="344.4" cy="254.8" r="3.5" fill="#b4157f"/>
+<circle cx="260.0" cy="284.0" r="3.5" fill="#b4157f"/>
+<circle cx="192.5" cy="245.0" r="3.5" fill="#b4157f"/>
+<circle cx="186.8" cy="163.8" r="3.5" fill="#b4157f"/>
+<text x="260.0" y="50.0" text-anchor="middle" font-size="13" fill="#1b2433">Offensive security</text>
+<text x="391.6" y="126.0" text-anchor="start" font-size="13" fill="#1b2433">Cloud (AWS)</text>
+<text x="391.6" y="296.0" text-anchor="start" font-size="13" fill="#1b2433">Python</text>
+<text x="260.0" y="372.0" text-anchor="middle" font-size="13" fill="#1b2433">Data &amp; ML</text>
+<text x="128.4" y="296.0" text-anchor="end" font-size="13" fill="#1b2433">SQL &amp; databases</text>
+<text x="128.4" y="126.0" text-anchor="end" font-size="13" fill="#1b2433">Linux &amp; networks</text>
+</svg>

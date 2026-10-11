@@ -1,0 +1,15 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 900 390" width="900" height="390" role="img" aria-label="Mario Martínez: Jr. cybersecurity &amp; data · I learn by breaking things first">
+<style>text{font-family:ui-monospace,SFMono-Regular,Menlo,Consolas,"DejaVu Sans Mono",monospace}.l{animation:in .5s ease-out backwards}@keyframes in{from{opacity:0;transform:translateY(4px)}}.c{animation:blink 1s steps(1) 6}@keyframes blink{50%{opacity:0}}@media (prefers-reduced-motion:reduce){.l,.c{animation:none}}</style>
+<rect width="900" height="390" rx="10" fill="#f6f8fb"/>
+<text x="40" y="62" font-size="34" font-weight="700" fill="#1b2433">Mario Martínez</text>
+<text x="40" y="90" font-size="15" fill="#5b6980">Jr. cybersecurity &amp; data · I learn by breaking things first</text>
+<line x1="40" y1="108" x2="860" y2="108" stroke="#d5dce8"/>
+<g class="l" style="animation-delay:0.4s"><text x="40" y="140" font-size="15" fill="#b4157f">$</text><text x="60" y="140" font-size="15" fill="#1b2433">nmap -sV --open mario</text></g>
+<g class="l" style="animation-delay:0.9s"><text x="40" y="168" font-size="15" fill="#5b6980">Host is up. Open to work: trainee / junior roles</text></g>
+<g class="l" style="animation-delay:1.4s"><text x="40" y="206" font-size="13" fill="#5b6980">PORT</text><text x="150" y="206" font-size="13" fill="#5b6980">STATE</text><text x="235" y="206" font-size="13" fill="#5b6980">SERVICE</text><text x="360" y="206" font-size="13" fill="#5b6980">VERSION</text></g>
+<g class="l" style="animation-delay:1.75s"><text x="40" y="238" font-size="15" fill="#1b2433">22/tcp</text><text x="150" y="238" font-size="15" fill="#0a7f8c">open</text><text x="235" y="238" font-size="15" fill="#1b2433">cloud</text><text x="360" y="238" font-size="15" fill="#5b6980">AWS · Docker · IAM least-privilege</text></g>
+<g class="l" style="animation-delay:2.10s"><text x="40" y="266" font-size="15" fill="#1b2433">80/tcp</text><text x="150" y="266" font-size="15" fill="#0a7f8c">open</text><text x="235" y="266" font-size="15" fill="#1b2433">data</text><text x="360" y="266" font-size="15" fill="#5b6980">Python · Pandas · SQL · scikit-learn</text></g>
+<g class="l" style="animation-delay:2.45s"><text x="40" y="294" font-size="15" fill="#1b2433">443/tcp</text><text x="150" y="294" font-size="15" fill="#0a7f8c">open</text><text x="235" y="294" font-size="15" fill="#1b2433">offensive</text><text x="360" y="294" font-size="15" fill="#5b6980">Nmap · Metasploit · Hack The Box</text></g>
+<g class="l" style="animation-delay:2.80s"><text x="40" y="322" font-size="15" fill="#1b2433">8080/tcp</text><text x="150" y="322" font-size="15" fill="#0a7f8c">open</text><text x="235" y="322" font-size="15" fill="#1b2433">learning</text><text x="360" y="322" font-size="15" fill="#5b6980">always on</text></g>
+<g class="l" style="animation-delay:3.20s"><text x="40" y="362" font-size="15" fill="#b4157f">$</text><rect class="c" style="animation-delay:3.70s" x="58" y="349" width="9" height="17" fill="#b4157f"/></g>
+</svg>

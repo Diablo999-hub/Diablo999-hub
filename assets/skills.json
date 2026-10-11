@@ -1,0 +1,12 @@
+{
+  "title": "self-rated, 0-100",
+  "axes": [
+    {"label": "Offensive security", "value": 65},
+    {"label": "Cloud (AWS)",        "value": 60},
+    {"label": "Python",             "value": 75},
+    {"label": "Data & ML",          "value": 60},
+    {"label": "SQL & databases",    "value": 60},
+    {"label": "Linux & networks",   "value": 65}
+  ]
+}
+

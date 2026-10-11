@@ -1,0 +1,13 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 480 210" width="480" height="210" role="img" aria-label="GitHub statistics">
+<style>text{font-family:ui-monospace,SFMono-Regular,Menlo,Consolas,"DejaVu Sans Mono",monospace}.f{animation:f .6s ease-out both}@keyframes f{from{opacity:0;transform:translateY(4px)}}@media (prefers-reduced-motion:reduce){.f{animation:none}}</style>
+<rect x="0.5" y="0.5" width="479" height="209" rx="10" fill="#0a1020" stroke="#27324a"/>
+<text x="24" y="36" font-size="15" fill="#ff4fd8">$</text><text x="40" y="36" font-size="15" fill="#c9d4e5">netstat --user Diablo999-hub</text>
+<text x="456" y="36" font-size="12" text-anchor="end" fill="#7f8da6">live · auto-refreshed</text>
+<line x1="24" y1="50" x2="456" y2="50" stroke="#27324a"/>
+<g class="f" style="animation-delay:0.00s"><text x="96.0" y="100" text-anchor="middle" font-size="26" font-weight="700" fill="#35e0f0">—</text><text x="96.0" y="122" text-anchor="middle" font-size="12" fill="#7f8da6">stars</text></g>
+<g class="f" style="animation-delay:0.08s"><text x="240.0" y="100" text-anchor="middle" font-size="26" font-weight="700" fill="#35e0f0">—</text><text x="240.0" y="122" text-anchor="middle" font-size="12" fill="#7f8da6">public repos</text></g>
+<g class="f" style="animation-delay:0.16s"><text x="384.0" y="100" text-anchor="middle" font-size="26" font-weight="700" fill="#35e0f0">—</text><text x="384.0" y="122" text-anchor="middle" font-size="12" fill="#7f8da6">followers</text></g>
+<g class="f" style="animation-delay:0.24s"><text x="96.0" y="168" text-anchor="middle" font-size="26" font-weight="700" fill="#ff4fd8">—</text><text x="96.0" y="190" text-anchor="middle" font-size="12" fill="#7f8da6">contribs (1y)</text></g>
+<g class="f" style="animation-delay:0.32s"><text x="240.0" y="168" text-anchor="middle" font-size="26" font-weight="700" fill="#ff4fd8">—</text><text x="240.0" y="190" text-anchor="middle" font-size="12" fill="#7f8da6">current streak</text></g>
+<g class="f" style="animation-delay:0.40s"><text x="384.0" y="168" text-anchor="middle" font-size="26" font-weight="700" fill="#ff4fd8">—</text><text x="384.0" y="190" text-anchor="middle" font-size="12" fill="#7f8da6">longest streak</text></g>
+</svg>

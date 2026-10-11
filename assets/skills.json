@@ -1,5 +1,6 @@
 {
-  "title": "self-rated, 0-100",
+  "title": "skills · self-rated 0-100",
+  "_comment": "Edit the values and push: the workflow redraws assets/radar-*.svg.",
   "axes": [
     {"label": "Offensive security", "value": 65},
     {"label": "Cloud (AWS)",        "value": 60},

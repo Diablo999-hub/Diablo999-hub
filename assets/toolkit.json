@@ -1,0 +1,13 @@
+{
+  "title": "toolkit · self-rated 0-100",
+  "_comment": "Second radar, drawn with scores. These numbers are placeholders: set your own and push.",
+  "axes": [
+    {"label": "Nmap",       "value": 70},
+    {"label": "Metasploit", "value": 55},
+    {"label": "Bash",       "value": 60},
+    {"label": "Docker",     "value": 55},
+    {"label": "Pandas",     "value": 70},
+    {"label": "Git",        "value": 70}
+  ]
+}
+

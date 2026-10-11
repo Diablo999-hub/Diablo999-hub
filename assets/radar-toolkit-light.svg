@@ -1,0 +1,29 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 520 420" width="520" height="420" role="img" aria-label="toolkit · self-rated 0-100">
+<style>text{font-family:ui-monospace,SFMono-Regular,Menlo,Consolas,"DejaVu Sans Mono",monospace}.shape{animation:grow 1.2s ease-out both;transform-origin:260px 226px}@keyframes grow{from{transform:scale(0);opacity:0}}@media (prefers-reduced-motion:reduce){.shape{animation:none}}</style>
+<text x="260.0" y="28" text-anchor="middle" font-size="14" fill="#5b6980">toolkit · self-rated 0-100</text>
+<polygon points="260.0,194.0 287.7,210.0 287.7,242.0 260.0,258.0 232.3,242.0 232.3,210.0" fill="none" stroke="#d5dce8" stroke-width="1"/>
+<polygon points="260.0,162.0 315.4,194.0 315.4,258.0 260.0,290.0 204.6,258.0 204.6,194.0" fill="none" stroke="#d5dce8" stroke-width="1"/>
+<polygon points="260.0,130.0 343.1,178.0 343.1,274.0 260.0,322.0 176.9,274.0 176.9,178.0" fill="none" stroke="#d5dce8" stroke-width="1"/>
+<polygon points="260.0,98.0 370.9,162.0 370.9,290.0 260.0,354.0 149.1,290.0 149.1,162.0" fill="none" stroke="#d5dce8" stroke-width="1"/>
+<line x1="260.0" y1="226.0" x2="260.0" y2="98.0" stroke="#d5dce8" stroke-width="1"/>
+<line x1="260.0" y1="226.0" x2="370.9" y2="162.0" stroke="#d5dce8" stroke-width="1"/>
+<line x1="260.0" y1="226.0" x2="370.9" y2="290.0" stroke="#d5dce8" stroke-width="1"/>
+<line x1="260.0" y1="226.0" x2="260.0" y2="354.0" stroke="#d5dce8" stroke-width="1"/>
+<line x1="260.0" y1="226.0" x2="149.1" y2="290.0" stroke="#d5dce8" stroke-width="1"/>
+<line x1="260.0" y1="226.0" x2="149.1" y2="162.0" stroke="#d5dce8" stroke-width="1"/>
+<g class="shape">
+<polygon points="260.0,136.4 321.0,190.8 326.5,264.4 260.0,296.4 182.4,270.8 182.4,181.2" fill="#0a7f8c" fill-opacity="0.16" stroke="#0a7f8c" stroke-width="2" stroke-linejoin="round"/>
+<circle cx="260.0" cy="136.4" r="3.5" fill="#b4157f"/>
+<circle cx="321.0" cy="190.8" r="3.5" fill="#b4157f"/>
+<circle cx="326.5" cy="264.4" r="3.5" fill="#b4157f"/>
+<circle cx="260.0" cy="296.4" r="3.5" fill="#b4157f"/>
+<circle cx="182.4" cy="270.8" r="3.5" fill="#b4157f"/>
+<circle cx="182.4" cy="181.2" r="3.5" fill="#b4157f"/>
+</g>
+<text x="260.0" y="72.0" text-anchor="middle" font-size="13" fill="#1b2433">Nmap <tspan fill="#b4157f">70</tspan></text>
+<text x="389.9" y="147.0" text-anchor="start" font-size="13" fill="#1b2433">Metasploit <tspan fill="#b4157f">55</tspan></text>
+<text x="389.9" y="315.0" text-anchor="start" font-size="13" fill="#1b2433">Bash <tspan fill="#b4157f">60</tspan></text>
+<text x="260.0" y="390.0" text-anchor="middle" font-size="13" fill="#1b2433">Docker <tspan fill="#b4157f">55</tspan></text>
+<text x="130.1" y="315.0" text-anchor="end" font-size="13" fill="#1b2433">Pandas <tspan fill="#b4157f">70</tspan></text>
+<text x="130.1" y="147.0" text-anchor="end" font-size="13" fill="#1b2433">Git <tspan fill="#b4157f">70</tspan></text>
+</svg>

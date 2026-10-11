@@ -1,13 +1,16 @@
-name: Refresh charts
+name: Refresh charts and cards
 
 on:
+  schedule:
+    - cron: "0 9 * * *"   # daily, keeps the stats card current
   workflow_dispatch:
   push:
     branches: [main]
     paths:
       - "assets/skills.json"
-      - "scripts/radar.py"
-      - "scripts/banner.py"
+      - "assets/toolkit.json"
+      - "scripts/**"
+      - ".github/workflows/radar.yml"
 
 permissions:
   contents: write
@@ -22,17 +25,27 @@ jobs:
         with:
           python-version: "3.12"
 
-      - name: Radar
+      - name: Skill radar
         run: python scripts/radar.py --data assets/skills.json -o assets/radar
+
+      - name: Toolkit radar
+        run: python scripts/radar.py --data assets/toolkit.json -o assets/radar-toolkit --values
 
       - name: Banner
         run: python scripts/banner.py -o assets/banner
+
+      # Self-hosted stats. METRICS_TOKEN (a personal access token) is optional;
+      # the built-in GITHUB_TOKEN works too.
+      - name: Stat and language cards
+        env:
+          GITHUB_TOKEN: ${{ secrets.METRICS_TOKEN || secrets.GITHUB_TOKEN }}
+        run: python scripts/cards.py --user "${{ github.repository_owner }}" --out assets
 
       - name: Commit if changed
         run: |
           git config user.name  "github-actions[bot]"
           git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
           git add assets/*.svg
-          git diff --staged --quiet || git commit -m "chore: refresh charts"
+          git diff --staged --quiet || git commit -m "chore: refresh charts and cards"
           git push
 

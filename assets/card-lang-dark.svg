@@ -1,0 +1,12 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 480 130" width="480" height="130" role="img" aria-label="Most used languages">
+<style>text{font-family:ui-monospace,SFMono-Regular,Menlo,Consolas,"DejaVu Sans Mono",monospace}.f{animation:f .6s ease-out both}@keyframes f{from{opacity:0;transform:translateY(4px)}}@media (prefers-reduced-motion:reduce){.f{animation:none}}</style>
+<rect x="0.5" y="0.5" width="479" height="129" rx="10" fill="#0a1020" stroke="#27324a"/>
+<text x="24" y="36" font-size="15" fill="#ff4fd8">$</text><text x="40" y="36" font-size="15" fill="#c9d4e5">du -sh ./languages</text>
+<text x="456" y="36" font-size="12" text-anchor="end" fill="#7f8da6">by bytes · own repos</text>
+<line x1="24" y1="50" x2="456" y2="50" stroke="#27324a"/>
+<rect x="24" y="70" width="432" height="10" rx="5" fill="#16203a"/>
+<clipPath id="c"><rect x="24" y="70" width="432" height="10" rx="5"/></clipPath><g clip-path="url(#c)">
+<rect x="24.0" y="70" width="432.5" height="10" fill="#35e0f0"/>
+</g>
+<g class="f" style="animation-delay:0.00s"><circle cx="30.0" cy="108" r="5" fill="#35e0f0"/><text x="42.0" y="112" font-size="13" fill="#c9d4e5">Python</text><text x="224.0" y="112" font-size="13" text-anchor="end" fill="#7f8da6">100.0%</text></g>
+</svg>

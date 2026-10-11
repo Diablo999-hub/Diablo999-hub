@@ -1,26 +1,29 @@
-<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 520 400" width="520" height="400" role="img" aria-label="Skill radar chart">
-<style>text{font-family:ui-monospace,SFMono-Regular,Menlo,Consolas,"DejaVu Sans Mono",monospace}</style>
-<polygon points="260.0,173.5 288.1,189.8 288.1,222.2 260.0,238.5 231.9,222.2 231.9,189.8" fill="none" stroke="#27324a" stroke-width="1"/>
-<polygon points="260.0,141.0 316.3,173.5 316.3,238.5 260.0,271.0 203.7,238.5 203.7,173.5" fill="none" stroke="#27324a" stroke-width="1"/>
-<polygon points="260.0,108.5 344.4,157.2 344.4,254.8 260.0,303.5 175.6,254.8 175.6,157.2" fill="none" stroke="#27324a" stroke-width="1"/>
-<polygon points="260.0,76.0 372.6,141.0 372.6,271.0 260.0,336.0 147.4,271.0 147.4,141.0" fill="none" stroke="#27324a" stroke-width="1"/>
-<line x1="260.0" y1="206.0" x2="260.0" y2="76.0" stroke="#27324a" stroke-width="1"/>
-<line x1="260.0" y1="206.0" x2="372.6" y2="141.0" stroke="#27324a" stroke-width="1"/>
-<line x1="260.0" y1="206.0" x2="372.6" y2="271.0" stroke="#27324a" stroke-width="1"/>
-<line x1="260.0" y1="206.0" x2="260.0" y2="336.0" stroke="#27324a" stroke-width="1"/>
-<line x1="260.0" y1="206.0" x2="147.4" y2="271.0" stroke="#27324a" stroke-width="1"/>
-<line x1="260.0" y1="206.0" x2="147.4" y2="141.0" stroke="#27324a" stroke-width="1"/>
-<polygon points="260.0,121.5 327.5,167.0 344.4,254.8 260.0,284.0 192.5,245.0 186.8,163.8" fill="#35e0f0" fill-opacity="0.20" stroke="#35e0f0" stroke-width="2" stroke-linejoin="round"/>
-<circle cx="260.0" cy="121.5" r="3.5" fill="#ff4fd8"/>
-<circle cx="327.5" cy="167.0" r="3.5" fill="#ff4fd8"/>
-<circle cx="344.4" cy="254.8" r="3.5" fill="#ff4fd8"/>
-<circle cx="260.0" cy="284.0" r="3.5" fill="#ff4fd8"/>
-<circle cx="192.5" cy="245.0" r="3.5" fill="#ff4fd8"/>
-<circle cx="186.8" cy="163.8" r="3.5" fill="#ff4fd8"/>
-<text x="260.0" y="50.0" text-anchor="middle" font-size="13" fill="#c9d4e5">Offensive security</text>
-<text x="391.6" y="126.0" text-anchor="start" font-size="13" fill="#c9d4e5">Cloud (AWS)</text>
-<text x="391.6" y="296.0" text-anchor="start" font-size="13" fill="#c9d4e5">Python</text>
-<text x="260.0" y="372.0" text-anchor="middle" font-size="13" fill="#c9d4e5">Data &amp; ML</text>
-<text x="128.4" y="296.0" text-anchor="end" font-size="13" fill="#c9d4e5">SQL &amp; databases</text>
-<text x="128.4" y="126.0" text-anchor="end" font-size="13" fill="#c9d4e5">Linux &amp; networks</text>
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 520 420" width="520" height="420" role="img" aria-label="skills · self-rated 0-100">
+<style>text{font-family:ui-monospace,SFMono-Regular,Menlo,Consolas,"DejaVu Sans Mono",monospace}.shape{animation:grow 1.2s ease-out both;transform-origin:260px 226px}@keyframes grow{from{transform:scale(0);opacity:0}}@media (prefers-reduced-motion:reduce){.shape{animation:none}}</style>
+<text x="260.0" y="28" text-anchor="middle" font-size="14" fill="#7f8da6">skills · self-rated 0-100</text>
+<polygon points="260.0,194.0 287.7,210.0 287.7,242.0 260.0,258.0 232.3,242.0 232.3,210.0" fill="none" stroke="#27324a" stroke-width="1"/>
+<polygon points="260.0,162.0 315.4,194.0 315.4,258.0 260.0,290.0 204.6,258.0 204.6,194.0" fill="none" stroke="#27324a" stroke-width="1"/>
+<polygon points="260.0,130.0 343.1,178.0 343.1,274.0 260.0,322.0 176.9,274.0 176.9,178.0" fill="none" stroke="#27324a" stroke-width="1"/>
+<polygon points="260.0,98.0 370.9,162.0 370.9,290.0 260.0,354.0 149.1,290.0 149.1,162.0" fill="none" stroke="#27324a" stroke-width="1"/>
+<line x1="260.0" y1="226.0" x2="260.0" y2="98.0" stroke="#27324a" stroke-width="1"/>
+<line x1="260.0" y1="226.0" x2="370.9" y2="162.0" stroke="#27324a" stroke-width="1"/>
+<line x1="260.0" y1="226.0" x2="370.9" y2="290.0" stroke="#27324a" stroke-width="1"/>
+<line x1="260.0" y1="226.0" x2="260.0" y2="354.0" stroke="#27324a" stroke-width="1"/>
+<line x1="260.0" y1="226.0" x2="149.1" y2="290.0" stroke="#27324a" stroke-width="1"/>
+<line x1="260.0" y1="226.0" x2="149.1" y2="162.0" stroke="#27324a" stroke-width="1"/>
+<g class="shape">
+<polygon points="260.0,142.8 326.5,187.6 343.1,274.0 260.0,302.8 193.5,264.4 187.9,184.4" fill="#35e0f0" fill-opacity="0.20" stroke="#35e0f0" stroke-width="2" stroke-linejoin="round"/>
+<circle cx="260.0" cy="142.8" r="3.5" fill="#ff4fd8"/>
+<circle cx="326.5" cy="187.6" r="3.5" fill="#ff4fd8"/>
+<circle cx="343.1" cy="274.0" r="3.5" fill="#ff4fd8"/>
+<circle cx="260.0" cy="302.8" r="3.5" fill="#ff4fd8"/>
+<circle cx="193.5" cy="264.4" r="3.5" fill="#ff4fd8"/>
+<circle cx="187.9" cy="184.4" r="3.5" fill="#ff4fd8"/>
+</g>
+<text x="260.0" y="72.0" text-anchor="middle" font-size="13" fill="#c9d4e5">Offensive security</text>
+<text x="389.9" y="147.0" text-anchor="start" font-size="13" fill="#c9d4e5">Cloud (AWS)</text>
+<text x="389.9" y="315.0" text-anchor="start" font-size="13" fill="#c9d4e5">Python</text>
+<text x="260.0" y="390.0" text-anchor="middle" font-size="13" fill="#c9d4e5">Data &amp; ML</text>
+<text x="130.1" y="315.0" text-anchor="end" font-size="13" fill="#c9d4e5">SQL &amp; databases</text>
+<text x="130.1" y="147.0" text-anchor="end" font-size="13" fill="#c9d4e5">Linux &amp; networks</text>
 </svg>

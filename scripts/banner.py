@@ -2,7 +2,8 @@
 
     python scripts/banner.py -o assets/banner
 
-Edit the constants below, then re-run.
+The scan lines type in one after another and the whole sequence loops every
+LOOP seconds. The name and subtitle stay put. Edit the constants, then re-run.
 """
 import argparse
 from xml.sax.saxutils import escape
@@ -17,6 +18,7 @@ ROWS = [  # port, service, version
     ("443/tcp", "offensive", "Nmap · Metasploit · Hack The Box"),
     ("8080/tcp", "learning", "always on"),
 ]
+LOOP = 16.0  # seconds for one full cycle
 
 THEMES = {
     "dark": dict(bg="#0a1020", text="#c9d4e5", muted="#7f8da6", open="#35e0f0", prompt="#ff4fd8", rule="#27324a"),
@@ -26,20 +28,62 @@ W = 900
 X = (40, 150, 235, 360)  # columns: port, state, service, version
 
 
+def keyframes(i, start):
+    a = start / LOOP * 100
+    b = (start + 0.5) / LOOP * 100
+    return (
+        f"@keyframes k{i}{{0%,{a:.2f}%{{opacity:0;transform:translateY(4px)}}"
+        f"{b:.2f}%,93%{{opacity:1;transform:translateY(0)}}98%,100%{{opacity:0}}}}"
+        f".k{i}{{animation:k{i} {LOOP}s ease-out infinite}}"
+    )
+
+
 def build(t):
     y0 = 140
     rows_y = [y0 + 98 + 28 * i for i in range(len(ROWS))]
     last = rows_y[-1] + 40
     H = last + 28
+
+    body = []   # animated groups, in order
+    starts = []
+    s = 0.4
+
+    def add(svg):
+        nonlocal s
+        i = len(body)
+        starts.append(s)
+        body.append(svg.replace("<g>", f'<g class="k{i}">', 1))
+
+    add(f'<g><text x="40" y="{y0}" font-size="15" fill="{t["prompt"]}">$</text>'
+        f'<text x="60" y="{y0}" font-size="15" fill="{t["text"]}">{escape(CMD)}</text></g>')
+    s += 0.5
+    add(f'<g><text x="40" y="{y0 + 28}" font-size="15" fill="{t["muted"]}">{escape(HOST)}</text></g>')
+    s += 0.5
+    hy = y0 + 66
+    heads = "".join(
+        f'<text x="{x}" y="{hy}" font-size="13" fill="{t["muted"]}">{h}</text>'
+        for x, h in zip(X, ("PORT", "STATE", "SERVICE", "VERSION"))
+    )
+    add(f"<g>{heads}</g>")
+    for (port, svc, ver), y in zip(ROWS, rows_y):
+        s += 0.35
+        add(f'<g><text x="{X[0]}" y="{y}" font-size="15" fill="{t["text"]}">{port}</text>'
+            f'<text x="{X[1]}" y="{y}" font-size="15" fill="{t["open"]}">open</text>'
+            f'<text x="{X[2]}" y="{y}" font-size="15" fill="{t["text"]}">{svc}</text>'
+            f'<text x="{X[3]}" y="{y}" font-size="15" fill="{t["muted"]}">{escape(ver)}</text></g>')
+    s += 0.4
+    add(f'<g><text x="40" y="{last}" font-size="15" fill="{t["prompt"]}">$</text>'
+        f'<rect class="c" x="58" y="{last - 13}" width="9" height="17" fill="{t["prompt"]}"/></g>')
+
     css = (
         'text{font-family:ui-monospace,SFMono-Regular,Menlo,Consolas,"DejaVu Sans Mono",monospace}'
-        ".l{animation:in .5s ease-out backwards}"
-        "@keyframes in{from{opacity:0;transform:translateY(4px)}}"
-        ".c{animation:blink 1s steps(1) 6}"
-        "@keyframes blink{50%{opacity:0}}"
-        "@media (prefers-reduced-motion:reduce){.l,.c{animation:none}}"
+        + "".join(keyframes(i, st) for i, st in enumerate(starts))
+        + ".c{animation:blink 1s steps(1) infinite}@keyframes blink{50%{opacity:0}}"
+        + "@media (prefers-reduced-motion:reduce){"
+        + ",".join(f".k{i}" for i in range(len(starts)))
+        + ",.c{animation:none}}"
     )
-    o = [
+    head = [
         f'<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 {W} {H}" width="{W}" height="{H}" role="img" '
         f'aria-label="{escape(NAME)}: {escape(SUBTITLE)}">',
         f"<style>{css}</style>",
@@ -48,42 +92,7 @@ def build(t):
         f'<text x="40" y="90" font-size="15" fill="{t["muted"]}">{escape(SUBTITLE)}</text>',
         f'<line x1="40" y1="108" x2="{W - 40}" y2="108" stroke="{t["rule"]}"/>',
     ]
-    d = 0.4
-    o.append(
-        f'<g class="l" style="animation-delay:{d}s">'
-        f'<text x="40" y="{y0}" font-size="15" fill="{t["prompt"]}">$</text>'
-        f'<text x="60" y="{y0}" font-size="15" fill="{t["text"]}">{escape(CMD)}</text></g>'
-    )
-    d += 0.5
-    o.append(
-        f'<g class="l" style="animation-delay:{d}s">'
-        f'<text x="40" y="{y0 + 28}" font-size="15" fill="{t["muted"]}">{escape(HOST)}</text></g>'
-    )
-    d += 0.5
-    hy = y0 + 66
-    heads = "".join(
-        f'<text x="{x}" y="{hy}" font-size="13" fill="{t["muted"]}">{h}</text>'
-        for x, h in zip(X, ("PORT", "STATE", "SERVICE", "VERSION"))
-    )
-    o.append(f'<g class="l" style="animation-delay:{d}s">{heads}</g>')
-    for (port, svc, ver), y in zip(ROWS, rows_y):
-        d += 0.35
-        o.append(
-            f'<g class="l" style="animation-delay:{d:.2f}s">'
-            f'<text x="{X[0]}" y="{y}" font-size="15" fill="{t["text"]}">{port}</text>'
-            f'<text x="{X[1]}" y="{y}" font-size="15" fill="{t["open"]}">open</text>'
-            f'<text x="{X[2]}" y="{y}" font-size="15" fill="{t["text"]}">{svc}</text>'
-            f'<text x="{X[3]}" y="{y}" font-size="15" fill="{t["muted"]}">{escape(ver)}</text></g>'
-        )
-    d += 0.4
-    o.append(
-        f'<g class="l" style="animation-delay:{d:.2f}s">'
-        f'<text x="40" y="{last}" font-size="15" fill="{t["prompt"]}">$</text>'
-        f'<rect class="c" style="animation-delay:{d + 0.5:.2f}s" x="58" y="{last - 13}" '
-        f'width="9" height="17" fill="{t["prompt"]}"/></g>'
-    )
-    o.append("</svg>")
-    return "\n".join(o)
+    return "\n".join(head + body + ["</svg>"])
 
 
 if __name__ == "__main__":

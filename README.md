@@ -63,10 +63,10 @@ end to end, in about 4.5 hours against an original 12-week scope.
 
 Self-rated, and I update it as I learn.
 
-**Languages:** Python · SQL · Java · JavaScript · C · C++
-**Data:** Pandas · NumPy · scikit-learn · Matplotlib · Seaborn
-**Cloud and infra:** AWS (EC2, RDS, S3, IAM, Secrets Manager, SES) · Docker · Oracle Cloud · Cloudflare Tunnel · Git
-**Security:** Nmap · Metasploit · SQL injection · pivoting and tunneling · Linux
+- **Languages:** Python · SQL · Java · JavaScript · C · C++
+- **Data:** Pandas · NumPy · scikit-learn · Matplotlib · Seaborn
+- **Cloud and infra:** AWS (EC2, RDS, S3, IAM, Secrets Manager, SES) · Docker · Oracle Cloud · Cloudflare Tunnel · Git
+- **Security:** Nmap · Metasploit · SQL injection · pivoting and tunneling · Linux
 
 ---
 
@@ -98,3 +98,4 @@ Self-rated, and I update it as I learn.
 <sub>Say hi at <a href="https://diablo999-hub.github.io">diablo999-hub.github.io</a></sub>
 
 </div>
+
